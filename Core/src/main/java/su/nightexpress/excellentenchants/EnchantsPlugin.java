@@ -17,10 +17,7 @@ import su.nightexpress.excellentenchants.hook.impl.ProtocolLibHook;
 import su.nightexpress.excellentenchants.manager.EnchantManager;
 import su.nightexpress.excellentenchants.manager.EnchantProviders;
 import su.nightexpress.excellentenchants.nms.RegistryHack;
-import su.nightexpress.excellentenchants.nms.mc_1_21_7.RegistryHack_1_21_7;
-import su.nightexpress.excellentenchants.nms.mc_1_21_8.RegistryHack_1_21_8;
 import su.nightexpress.excellentenchants.nms.v1_21_4.RegistryHack_1_21_4;
-import su.nightexpress.excellentenchants.nms.v1_21_5.RegistryHack_1_21_5;
 import su.nightexpress.nightcore.NightPlugin;
 import su.nightexpress.nightcore.command.experimental.ImprovedCommands;
 import su.nightexpress.nightcore.config.PluginDetails;
@@ -90,9 +87,9 @@ public class EnchantsPlugin extends NightPlugin implements ImprovedCommands {
 
         switch (Version.getCurrent()) {
             case MC_1_21_4 -> this.registryHack = new RegistryHack_1_21_4(this);
-            case MC_1_21_5 -> this.registryHack = new RegistryHack_1_21_5(this);
-            case MC_1_21_7 -> this.registryHack = new RegistryHack_1_21_7(this);
-            case MC_1_21_8 -> this.registryHack = new RegistryHack_1_21_8(this);
+//            case MC_1_21_5 -> this.registryHack = new RegistryHack_1_21_5(this);
+//            case MC_1_21_7 -> this.registryHack = new RegistryHack_1_21_7(this);
+//            case MC_1_21_8 -> this.registryHack = new RegistryHack_1_21_8(this);
         }
     }
 

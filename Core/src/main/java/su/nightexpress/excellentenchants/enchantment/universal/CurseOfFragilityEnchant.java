@@ -2,6 +2,7 @@ package su.nightexpress.excellentenchants.enchantment.universal;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.inventory.InventoryView;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.MenuType;
@@ -35,7 +36,7 @@ public class CurseOfFragilityEnchant extends GameEnchantment implements Containe
     @Override
     public boolean onClick(@NotNull InventoryClickEvent event, @NotNull Player player, @NotNull ItemStack itemStack, int level) {
         InventoryView view = event.getView();
-        if (view.getMenuType() == MenuType.ANVIL || view.getMenuType() == MenuType.GRINDSTONE) {
+        if (view.getType() == InventoryType.ANVIL || view.getType() == InventoryType.GRINDSTONE) {
             event.setCancelled(true);
             return true;
         }

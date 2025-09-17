@@ -46,7 +46,7 @@ public class AutoReelEnchant extends GameEnchantment implements FishingEnchant {
             if (!event.getHook().isValid()) return;
 
             player.swingHand(slot);
-            event.getHook().retrieve(slot);
+            event.getHook().pullHookedEntity();
         });
         return true;
     }
